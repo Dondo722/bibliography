@@ -16,11 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from core.views import EntityKnower, EntityProvider
+from core.views import EntityProvider
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/v1/exist/<str:node>/', EntityKnower.as_view()),
+    path('api/v1/entity/', EntityProvider.as_view()),
     path('api/v1/entity/<str:node>/', EntityProvider.as_view()),
 ]

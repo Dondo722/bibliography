@@ -29,7 +29,7 @@ i_like_the_fact
 
 char_man
         => nrel_main_idtf: 
-            [мужчина] (* <-lang_ru;; *);
+            [персонаж мужчина] (* <-lang_ru;; *);
         <- lit_person;
         <- rrel_key_sc_element:
             ...
